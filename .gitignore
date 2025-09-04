@@ -1,0 +1,130 @@
+# --- OS / Editor cruft --------------------------------------------------------
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# VS Code / JetBrains 
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.example.json
+.idea/
+*.iml
+
+# direnv / environment wrappers
+.direnv/
+.envrc
+
+# --- Git merge artifacts ------------------------------------------------------
+*.orig
+*.rej
+
+# --- Logs ---------------------------------------------------------------------
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+log.txt
+*.pid
+
+# --- Python (backend) ---------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+.Python
+
+# Packaging / build
+build/
+dist/
+downloads/
+eggs/
+.eggs/
+parts/
+sdist/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual envs
+.venv/
+venv/
+ENV/
+env/
+
+# Type checkers / linters / test caches
+.mypy_cache/
+.pyright/
+.pyrightcache/
+.pyre/
+.dmypy.json
+ruff_cache/
+.pytest_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+pytestdebug.log
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Runtime data / SQLite
+data/
+data/**
+/data/
+*.db
+*.sqlite
+*.sqlite3
+
+# App secrets / env files
+.env
+.env.*
+*.env
+!.env.example
+!*.env.example
+
+# --- Node / Frontend (React, Vite, Next) --------------------------------------
+node_modules/
+bower_components/
+
+# Builds / outputs
+dist/
+build/
+out/
+.next/
+.storybook-out/
+.vite/
+.cache/
+
+# TypeScript
+*.tsbuildinfo
+
+# Test coverage (frontend)
+coverage/
+lcov.info
+
+# Misc frontend artifacts
+*.local
+*.map.css    
+# *.map       # (normalmente conviene mantener los sourcemaps JS fuera del repo)
+
+# --- Images / Certificates / Keys (no versionar secretos) ---------------------
+*.pem
+*.key
+*.crt
+*.pfx
+
+# --- Docker / Containers ------------------------------------------------------
+docker-data/
+.tmp/

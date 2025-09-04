@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+pydantic-settings
+sqlalchemy
+transformers
+torch
+numpy
+feedparser
+httpx
+snscrape
+ccxt
