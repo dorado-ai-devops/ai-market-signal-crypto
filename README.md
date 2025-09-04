@@ -1,6 +1,6 @@
-# Market Signal — Resumen del proyecto
+# Market Signal
 
-Breve: Market Signal es una plataforma modular para ingestión de señales de mercado (RSS, X/twitter), scoring de sentimiento (Transformers), clasificación de relevancia (LLM), cálculo de impacto y generación de señales operacionales. Expone una API FastAPI y una SPA React para visualización operacional.
+Market Signal es una proyecto modular para ingestión de señales de mercado (RSS, X/twitter), scoring de sentimiento (Transformers), clasificación de relevancia (LLM), cálculo de impacto y generación de señales operacionales. Expone una API FastAPI y una SPA React como front.
 
 Contenido del repositorio
 - `ms-back/` — Backend Python (FastAPI, SQLAlchemy). Ingestores, modelos de ML, lógica de señales, prices, eventos SSE y endpoints.
@@ -23,9 +23,8 @@ Frontend:
 
 ```bash
 cd ms-front
-pnpm install
-# Crear .env con VITE_API_BASE y VITE_USE_MOCK
-pnpm dev
+npm install
+npm run dev -- --host 0.0.0.0 --port 8080
 ```
 
 Arquitectura y flujo de datos (resumen)
